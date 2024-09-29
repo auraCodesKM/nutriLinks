@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriLinks - Features Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8f5; /* Light green background */
+            color: #2f4f4f; /* Dark green text */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #006400; /* Dark green */
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #006400; /* Dark green */
+        }
+
+        .feature-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .navigation {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #006400; /* Dark green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #005000; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>NutriLinks Features</h1>
+
+    <div class="feature-card" onclick="location.href='feature1.html'">
+        <div class="feature-title">Feature 1</div>
+        <div class="feature-description">Real-time food tracking and inventory management.</div>
+    </div>
+
+    <div class="feature-card" onclick="location.href='feature2.html'">
+        <div class="feature-title">Feature 2</div>
+        <div class="feature-description">AI-based demand prediction and resource allocation.</div>
+    </div>
+
+    <div class="feature-card" onclick="location.href='feature3.html'">
+        <div class="feature-title">Feature 3</div>
+        <div class="feature-description">Donor management and engagement tools.</div>
+    </div>
+
+    <div class="feature-card" onclick="location.href='feature4.html'">
+        <div class="feature-title">Feature 4</div>
+        <div class="feature-description">Recipient feedback and monitoring system.</div>
+    </div>
+
+    <div class="feature-card" onclick="location.href='feature5.html'">
+        <div class="feature-title">Feature 5</div>
+        <div class="feature-description">Analytics dashboard for performance tracking.</div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-button" onclick="location.href='index.html'">Back to Home</button>
+    </div>
+
+</body>
+</html>

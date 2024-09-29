@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriLinks - Choose Registration Type</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8f5; /* Light green background */
+            color: #2f4f4f; /* Dark green text */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .choice-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .choice-container h2 {
+            color: #006400; /* Dark green */
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: #2f4f4f; /* Darker green */
+            color: white;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #006400; /* Dark green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="choice-container">
+        <h2>Choose Your Registration Type</h2>
+        <button onclick="window.location.href='Dregistration.html'">Register as Donor</button>
+        <button onclick="window.location.href='Rregistration.html'">Register as Receiver</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriLinks - Food Donation Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8f5;
+            color: #2f4f4f;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: #006400;
+        }
+        .btn-back {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #005000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Food Donation Tracker</h1>
+        <canvas id="donationChart"></canvas>
+        <button class="btn-back" onclick="location.href='featuresmenue.html'">Back to Features Menu</button>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('donationChart').getContext('2d');
+        const donationChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Fruits', 'Vegetables', 'Grains', 'Protein'],
+                datasets: [{
+                    label: 'Food Donations',
+                    data: [25, 35, 20, 20],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(153, 102, 255, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                    },
+                    tooltip: {
+                        enabled: true,
+                    },
+                },
+            }
+        });
+    </script>
+
+</body>
+</html>

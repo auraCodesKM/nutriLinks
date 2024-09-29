@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriLinks - Healthy Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8f5;
+            color: #2f4f4f;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: #006400;
+        }
+        .recipe {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .recipe:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-back {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #005000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Healthy Recipes</h1>
+        
+        <div class="recipe">
+            <h2>Quinoa Salad</h2>
+            <p><strong>Ingredients:</strong> Quinoa, bell peppers, cucumber, olive oil, lemon juice.</p>
+            <p><strong>Instructions:</strong> Cook quinoa, mix with diced vegetables, dress with olive oil and lemon.</p>
+        </div>
+
+        <div class="recipe">
+            <h2>Oven-Baked Salmon</h2>
+            <p><strong>Ingredients:</strong> Salmon fillets, garlic, lemon, herbs.</p>
+            <p><strong>Instructions:</strong> Marinate salmon, bake at 180°C for 15-20 mins.</p>
+        </div>
+
+        <button class="btn-back" onclick="location.href='featuresmenue.html'">Back to Features Menu</button>
+    </div>
+
+</body>
+</html>
